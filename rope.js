@@ -1,4 +1,4 @@
-class Chain{
+class Rope{
     constructor(bodyA, bodyB,offsetX,offsetY)
     {
         this.offsetX=offsetX
@@ -9,14 +9,14 @@ class Chain{
             ponitB:{x:this.offsetX,y:this.offsetY},
         }
 
-        this.chain = Constraint.create(options);
-        World.add(world, this.chain);
+        this.Rope = Constraint.create(options);
+        World.add(world, this.rope);
     }
 
     display()
     {
-        var pointA = this.chain.bodyA.position;
-        var pointB = this.chain.bodyB.position;
+        var pointA = this.rope.bodyA.position;
+        var pointB = this.rope.bodyB.position;
     
         strokeWeight(2);
 
